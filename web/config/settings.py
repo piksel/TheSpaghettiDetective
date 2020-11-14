@@ -68,9 +68,16 @@ INSTALLED_APPS = [
 
 if os.environ.get('SOCIAL_LOGIN') == 'True':
     INSTALLED_APPS += [
-        'allauth.socialaccount.providers.facebook',
-        'allauth.socialaccount.providers.google',
+        'allauth.socialaccount.providers.github',
     ]
+    SOCIALACCOUNT_PROVIDERS = {
+        'github': {
+            'SCOPE': [
+                'user',
+                'read:org',
+            ],
+        }
+    }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

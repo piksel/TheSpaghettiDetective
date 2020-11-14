@@ -17,8 +17,8 @@ x-web-defaults: &web-defaults
     EMAIL_USE_TLS: 'True'
     DEFAULT_FROM_EMAIL: 'changeme@example.com'
     DEBUG: 'False'    # Don't set DEBUG to True, otherwise the static files will be cached in browser until hard-refresh
-    SITE_USES_HTTPS: 'False' # set it to 'True' if https is set up
-    SOCIAL_LOGIN: 'False'
+    SITE_USES_HTTPS: 'True' # set it to 'True' if https is set up
+    SOCIAL_LOGIN: 'True'
     REDIS_URL: 'redis://redis:6379'
     DATABASE_URL: 'sqlite:////app/db.sqlite3'
     INTERNAL_MEDIA_HOST: 'http://web:3334'

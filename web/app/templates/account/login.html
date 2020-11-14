@@ -16,10 +16,8 @@
 
       {% if socialaccount_providers %}
       <div class="social-login">
-        <a href="{% provider_login_url "facebook" method="oauth2" %}" class="btn facebook-btn social-btn"
-          role="button"><span><i class="fab fa-facebook-f"></i> Sign In with Facebook</span> </a>
-        <a href="{% provider_login_url "google" method="oauth2" %}" class="btn google-btn social-btn"
-          role="button"><span><i class="fab fa-google-plus-g"></i> Sign In with Google+</span> </a>
+        <a href="{% provider_login_url "github" method="oauth2" %}" class="btn github-btn social-btn"
+          role="button"><span><i class="fab fa-github"></i> Sign In with Github</span> </a>
       </div>
       {% endif %}
 
